@@ -1,0 +1,21 @@
+for windows after setup odoo.exe and config postgre pgAdmin (user and password)..used to set up odoo.exe
+for windows you must clone odoo 
+******************************************************************
+1- to clone Odoo
+*****************
+	git clone https://www.github.com/odoo/odoo --depth 1 --branch 15.0 odoo15
+
+ ----------------------------------------------------------------------------------------------------------------
+| ****** you must close the server which install with odoo.exe and disable it before build the next server ***** |
+ ----------------------------------------------------------------------------------------------------------------
+
+2-to build server write this command in your "cmd"
+***************************************************
+	"C:\Program Files\Odoo\python\python.exe" odoo-bin -w 123 -r admin --addons-path=addons -s
+
+3-after wwrite previous command you will find odoo.conf created in your odoo folder to run server
+**************************************************************************************************
+	"C:\Program Files\Odoo\python\python.exe" odoo-bin -w 123 -r admin -c odoo.conf
+
+-----------------------------------------------------------------------------------------------------------------------
+
